@@ -1,24 +1,13 @@
-# README
+Projet THP | Boutique en ligne
+--------------------------------------------
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 🖊 Pitch
 
-Things you may want to cover:
+Création d'une boutique en ligne, pour un magasin de photos de chatons. La boutique va afficher les différents produits, puis les clients pourront s'inscrire, remplir leur panier, et payer l'objet avec Stripe pour le recevoir par email.
 
-* Ruby version
+### 💻 Versions
 
-* System dependencies
+Version de Ruby : 2.5.1
+Version de Rails : 5.2.1
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+--------------------------------------------
