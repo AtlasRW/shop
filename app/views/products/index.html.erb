@@ -1,13 +1,13 @@
-<% @products.each do |product| %>
+<% @items.each do |item| %>
 
-<div class="max-w-sm rounded overflow-hidden shadow-lg" href="<%= product_path %>">
+<div class="max-w-sm rounded overflow-hidden shadow-lg" href="<%= item_path %>">
   <img class="w-full" src="/img/card-top.jpg">
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2">
-      <%= product.title %>
+      <%= item.title %>
     </div>
     <p class="text-gray-700 text-base">
-      <%= product.content %>
+      <%= item.description %>
     </p>
   </div>
 </div>
