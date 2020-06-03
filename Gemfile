@@ -5,7 +5,7 @@ ruby '2.5.1'
 
 gem 'faker', :git => 'https://github.com/ZeddBox/faker_fr.git', :branch => 'master'
 gem 'table_print'
-
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4.3'
 # Use postgresql as the database for Active Record
