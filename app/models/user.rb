@@ -8,10 +8,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   def welcome_send
-      
       UserMailer.welcome_email(self).deliver_now
-      OrderMailer.resume_order(self,items).deliver_now
-
   end
   
 end
