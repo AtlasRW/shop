@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
 
     def create
         @order=Order.new(user_id:params(:user_id) , item_id:params(:item_id))
+    end 
         
     def index
         @orders = Order.all
