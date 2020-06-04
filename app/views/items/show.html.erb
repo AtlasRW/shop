@@ -19,9 +19,9 @@
         <div class="flex">
           <span class="title-font font-medium text-2xl"><%= @item.price %>€</span>
           <% if user_signed_in? %>
-            <button class="flex ml-auto text-indigo-500 bg-white border-0 py-2 px-6 focus:outline-none hover:text-indigo-900 rounded">Ajouter au panier</button>
+            <%= link_to "Ajouter au panier", line_items_path, class: "flex ml-auto text-indigo-500 bg-white border-0 py-2 px-6 focus:outline-none hover:text-indigo-900 rounded" %>
           <% else %>
-            <a href="<%= new_user_session_path %>" class="flex ml-auto text-white border border-white py-2 px-6 focus:outline-none hover:bg-white hover:text-indigo-500 rounded">Connexion</a>
+            <a href="<%= new_user_session_path %>" class="flex ml-auto text-white border border-white py-2 px-6 focus:outline-none hover:bg-white hover:text-indigo-500 rounded">Se connecter</a>
           <% end %>
         </div>
       </div>
