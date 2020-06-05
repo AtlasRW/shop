@@ -5,7 +5,6 @@ Rails.application.routes.draw do
       resources :items
       resources :line_items
       resources :orders
-
       root "users#index"
   end
   root 'items#index'
