@@ -1,7 +1,5 @@
 require 'faker'
 
-Item.destroy_all
-
 puts "Seeding database"
 
 # Génération des items
