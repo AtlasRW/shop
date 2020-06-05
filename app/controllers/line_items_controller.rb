@@ -26,8 +26,8 @@ class LineItemsController < ApplicationController
   # POST /line_items
   # POST /line_items.json
 def create
-    @instrument = Instrument.find(params[:instrument_id])
-    @line_item = @cart.add_instrument(@instrument)
+    @item= Item.find(params[:item_id])
+    @line_item = @cart.add_item(@item)
 
     respond_to do |format|
       if @line_item.save
@@ -72,6 +72,6 @@ def create
 
     # Never trust parameters from the scary internet, only allow the whitelist through.
     def line_item_params
-      params.require(:line_item).permit(:instrument_id)
+      params.require(:line_item).permit(:item_id)
     end
 end
