@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Confirmation de votre commande chez Metis Shop !</h1>
+    <p>
+        Voici le recapitulatif de vote commande 
+    </p>
+    <%@items.each{|item|%>
+        <p>
+        <%=item.title%>
+        </p><br/>
+    <%}%>
+
+    <p> À très vite sur Metis Shop  !
+  </body>
+</html>
