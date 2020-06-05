@@ -16,11 +16,11 @@
   <div class="container mx-auto max-w-xs rounded-lg overflow-hidden shadow-lg bg-indigo-500">
     <div class="relative">
       <a href="<%= item_path(item) %>">
-        <img class="w-full" src="<%= item.image_url %>" alt="<% item.title %>">
+        <img class="w-full" src="<%= item.image_url %>" alt="<%= item.title %>">
         <% if user_signed_in? %>
           <div class="text-right tracking-wide absolute w-full -mt-12 -ml-3">
             <button class="p-1 rounded-full transition ease-in duration-200 focus:outline-none">
-              <a title="Ajouter au panier" href="<% root_path %>">
+              <a title="Ajouter au panier" href="<%= user_path(current_user) %>">
               <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-8 h-8">
                 <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
                     C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
