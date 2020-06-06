@@ -9,7 +9,7 @@ Création d'une boutique en ligne, pour un magasin de photos de chatons. La bout
 ### 💻 Versions
 
 Version de Ruby : 2.5.1
-Version de Rails : 5.2.4.3
-Salut
+Version de Rails : 5.2.4
+Salut les gens
 
 --------------------------------------------
