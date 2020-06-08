@@ -10,6 +10,6 @@ Création d'une boutique en ligne, pour un magasin de photos de chatons. La bout
 
 Version de Ruby : 2.5.1
 Version de Rails : 5.2.4
-Salut les gens
+Salut les gens wesh la folie ce tuto de merde par Raph
 
 --------------------------------------------
