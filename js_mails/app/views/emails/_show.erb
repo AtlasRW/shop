@@ -1,0 +1,14 @@
+<tr>
+  <td><h4 class="pt-2 pl-2"><b>Object :</b> <%= email.object %></h4></td>
+</tr>
+<tr>
+  <td>
+    <div>
+      <%= email.body %>
+    </div>
+    <div class="btn-group mt-2">
+      <%= button_to "Delete", email_path(email.id),:class => "btn btn-danger mr-2", remote: true, :method => :delete %>
+      <%= button_to "Mark unread", emails_path,:class => "btn btn-info", remote: true, :method => :post %>
+    </div>
+  </td>
+</tr>
