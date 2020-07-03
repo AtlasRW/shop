@@ -1,0 +1,11 @@
+<div class="hero">
+<h1> <%= @event.title %> </h1>
+
+<strong> How Long : </strong>      <%=@event.duration %> min.<br/>
+</p>
+  <strong>Place : </strong>       <%=@event.location%><br/>
+  <strong>Price : </strong>       <%=@event.price%> €<br/>
+  <strong>Date : </strong>       <%=@event.start_date.strftime("%d/%m/%Y") %> à <%=@event.start_date.strftime("%H:%M")%><br/>
+<p> <%= @event.description %> </p>
+Participants : <%=@event.users.count%><br/>
+</div>

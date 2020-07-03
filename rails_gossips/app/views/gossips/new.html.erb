@@ -1,0 +1,30 @@
+<h1>Gossips#new</h1>
+<p>Find me in app/views/gossips/new.html.erb</p>
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+  <%= label_tag 'Title' %>
+  <%= text_field_tag 'title', @post.title %>
+  <br /> <br />
+
+  <%= label_tag 'Body' %>
+  <%= text_area_tag 'body', @post.body %>
+  <br /> <br />
+
+  <%= label_tag 'Author' %>
+  <%= text_field_tag 'author', @post.author %>
+  <br /> <br />
+
+  <%= submit_tag "Create Post" %>
+
+  <% end %>
+
+
+
+    <h1 class="py-3">#BalanceTonPotin</h1>
+  <p class="py-3">Balance ton potin via le formulaire ci-dessous 👇</p>
+  <form action='/' method='GET' class="form-group p-5 border rounded">
+    Quel est ton nom ?  <input type='text' name='gossip_author' class="form-control" placeholder="Quel nom?" /><br/>
+    Quel est ton potin ? <input type='text' name='gossip_content' class="form-control" placeholder="Veuillez saisir votre potin svp!" /><br/>
+    <input type='submit' class="btn btn-primary w-100" s/>
+  </form>
+  <a href="/">Retourne à la page des potins</a>
