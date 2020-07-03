@@ -1,0 +1,60 @@
+*
+{ font-family: Arial, sans-serif; color: #707070; margin: unset; }
+
+.head
+{ display: flex; justify-content: flex-end; padding: 1em; }
+    .nav
+    { color: black; font-size: 0.8em; padding: 0.5em; }
+    .nav:hover
+    { color: #666666; }
+    .apps
+    { opacity: 50%; padding: 0.1em; margin-left: 0.5em; }
+    .apps:hover
+    { opacity: 100%; }
+    #apps
+    { height: 1.5em; }
+    .photo
+    { margin-left: 1em; margin-right: 0.5em; margin-top: -0.2em; }
+    #photo
+    { height: 2.2em; }
+
+.content
+{ display: flex; flex-flow: column; margin-top: 7em; }
+    .logo
+    { margin: auto; margin-bottom: 1.5em; }
+        #logo
+        { width: 19.5em; height: 6.5em; }
+    .searchbar
+    { margin: auto; display: flex; flex-flow: row; padding: 0.7em; border: 1px solid #00000030; border-radius: 28px; height: 1.5em; }
+    .searchbar:hover
+    { box-shadow: 0.6px 0.2px 4px 2px #80808040; }
+        .icone
+        { margin: auto; height: 1.3em; opacity: 50%; }
+        #search
+        { border: none ; outline: none; margin-left: 1em; margin-right: 1em; width: 28em; }
+    .buttons
+    { margin: auto; display: flex; flex-flow: row; margin-top: 1.9em; }
+        .button
+        { width: 10em; height: 2.5em; background-color: #eeeeeeee; border: unset; border-radius: 3px;}
+        .button:hover
+        { border: 1px solid #99999999; color: black; box-shadow: 0.2px 0.2px 2px 0.2px #80808040; }
+        #blank
+        { width: 0.75em; }
+        
+.foot
+{ background-color: #eeeeeeee; display: flex; flex-flow: column; bottom: 0; position: absolute; width: 100%; font-size: 95%; }
+    .foot_lang
+    { display: flex; justify-content: flex-start; padding: 0.5em; padding-left: 2em; padding-top: 0.8em; padding-bottom: 0.8em; border: 0.001em solid #7c7c7c30; }
+    .foot_links
+    { display: flex; padding: 0.5em; padding-left: 2em; padding-right: 2em; padding-top: 0.8em; padding-bottom: 0.8em; }
+        #entreprise
+        { margin-left: 2em; }
+        #about
+        { margin-left: 2em; }
+        #parametres
+        { order: 1; margin-left: auto; }
+
+.link
+{ text-decoration: unset; }
+.link:hover
+{ text-decoration: underline; }
