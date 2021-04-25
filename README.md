@@ -1,9 +1,6 @@
 https://atlasrw.github.io/the_hacking_project/
 
-Création d'une page d'accueil pour une marque de vêtements de luxe
+Landing Page for a fictional luxury/streetwear clothing brand
 
-### TECHNOLOGIE UTILISÉE
+### TECHNOLOGY USED
 - Bootstrap
-
-### FORMATION
-Exercice réalisé dans le cadre de la formation The Hacking Project
