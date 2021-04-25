@@ -1,0 +1,30 @@
+<section class="text-white body-font overflow-hidden">
+  <div class="container px-5 py-5 mx-auto">
+    <div class="lg:w-4/5 bg-indigo-500 rounded p-5 mx-auto flex flex-wrap">
+      <img class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="<%= @item.image_url %>">
+      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+        <h1 class="text-white text-3xl title-font uppercase font-medium mb-1"><%= @item.title %></h1>
+        <p class="leading-relaxed"><%= @item.description %></p>
+        <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
+          <div class="flex ml-6 items-center">
+            <div class="relative">
+              <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <span class="title-font font-medium text-2xl"><%= @item.price %>€</span>
+          <% if user_signed_in? %>
+            <%= link_to "Ajouter au panier", user_path(current_user), class: "flex ml-auto text-indigo-500 bg-white border-0 py-2 px-6 focus:outline-none hover:text-indigo-900 rounded" %>
+          <% else %>
+            <%= link_to "Se connecter", new_user_session_path, class: "flex ml-auto text-white border border-white py-2 px-6 focus:outline-none hover:bg-white hover:text-indigo-500 rounded" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
